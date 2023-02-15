@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #fds {
+      display: flex;
+      background-image: url("https://images.pexels.com/photos/1535162/pexels-photo-1535162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-repeat: no-repeat;
+      background-size: 100% 100vh;
+      width: 100%;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      animation: asd 5s infinite alternate;
+    }
+    @keyframes asd {
+      0% {
+        background-image: url("https://images.pexels.com/photos/1535162/pexels-photo-1535162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      }
+      50% {
+        background-image: url("https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      }
+      100% {
+        background-image: url("https://images.pexels.com/photos/773009/pexels-photo-773009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      }
+    }
+    #fds:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff1c;
+      backdrop-filter: blur(5px);
+      z-index: -1;
+    }
+    .box {
+      width: min-content;
+      text-align: center;
+      padding: 20px 10px;
+      background: #00000042;
+    }
+    .cont1 input[type="text"] {
+      border: 0px;
+      padding: 5px 0px;
+      width: 301px;
+      margin: 8px;
+      border: 0px;
+      background-color: rgba(255, 255, 255, 0.808);
+    }
+    .cont1 input[type="text"]:hover {
+      text-align: center;
+      cursor: pointer;
+    }
+    .cont1 input[type="text"]::placeholder {
+      color: black;
+      text-align: center;
+    }
+
+    .cont1 input[type="submit"] {
+      width: 73px;
+      height: 29px;
+      background-color: rgba(237, 237, 237, 0.778);
+      border: 0px;
+      transition: 0.5s;
+    }
+    .cont1 input[type="submit"]:hover {
+      color: aliceblue;
+      background-color: rgba(255, 119, 0, 0.603);
+      cursor: pointer;
+      border: 0px;
+      width: 100px;
+    }
+  </style>
+  <body>
+    <section id="fds">
+      <div class="box">
+        <div>
+          <img src="img/logo2.png" alt="" style="width: 50%" />
+        </div>
+        <div>
+          <div class="cont1">
+            <input type="text" placeholder="Email" />
+          </div>
+          <div class="cont1">
+            <input type="text" placeholder="Password" />
+          </div>
+          <div class="cont1">
+            <input type="submit" name="submit" id="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
